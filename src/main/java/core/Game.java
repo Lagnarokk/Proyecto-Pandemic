@@ -1,5 +1,6 @@
 package core;
-
+// Jairo Figueroa
+// Ignacio Veas
 import core.actions.AbstractAction;
 import core.actions.DoNothing;
 import core.interfaces.IGameListener;
