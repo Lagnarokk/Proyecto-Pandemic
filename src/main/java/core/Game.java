@@ -920,10 +920,10 @@ public class Game {
 
 //        players.add(new RandomPlayer());
         // AGREGAR TIPO DE IA PARA LOS JUGADORES
-        players.add(new MCTSPlayer());
-        players.add(new MCTSPlayer());
-        players.add(new MCTSPlayer());
-        players.add(new MCTSPlayer());
+        players.add(new MCTSPlayer()); //J1
+        players.add(new MCTSPlayer()); //J2
+        players.add(new MCTSPlayer()); //J3
+        players.add(new MCTSPlayer()); //J4
 //        players.add(new MCTSPlayer(params1));
 //        players.add(new OSLAPlayer());
 //        players.add(new RMHCPlayer());
