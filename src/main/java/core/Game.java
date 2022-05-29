@@ -907,7 +907,7 @@ public class Game {
     public static void main(String[] args) {
         String gameType = Utils.getArg(args, "game", "Pandemic");
         boolean useGUI = Utils.getArg(args, "gui", true);
-        int playerCount = Utils.getArg(args, "nPlayers", 2);
+        int playerCount = Utils.getArg(args, "nPlayers", 4); //2 // CANTIDAD DE JUGADORES
         int turnPause = Utils.getArg(args, "turnPause", 0);
         long seed = Utils.getArg(args, "seed", System.currentTimeMillis());
 
@@ -918,9 +918,12 @@ public class Game {
 
         MCTSParams params1 = new MCTSParams();
 
-        players.add(new RandomPlayer());
-        players.add(new RandomPlayer());
-//        players.add(new MCTSPlayer());
+//        players.add(new RandomPlayer());
+        // AGREGAR TIPO DE IA PARA LOS JUGADORES
+        players.add(new MCTSPlayer()); //J1
+        players.add(new MCTSPlayer()); //J2
+        players.add(new MCTSPlayer()); //J3
+        players.add(new MCTSPlayer()); //J4
 //        players.add(new MCTSPlayer(params1));
 //        players.add(new OSLAPlayer());
 //        players.add(new RMHCPlayer());
