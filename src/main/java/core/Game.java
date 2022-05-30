@@ -920,17 +920,17 @@ public class Game {
 
 //        players.add(new RandomPlayer());
         // AGREGAR TIPO DE IA PARA LOS JUGADORES
-        players.add(new MCTSPlayer()); //J1
-        players.add(new MCTSPlayer()); //J2
-        players.add(new MCTSPlayer()); //J3
-        players.add(new MCTSPlayer()); //J4
+          players.add(new MCTSPlayer()); //J1
+          players.add(new MCTSPlayer()); //J2
+          players.add(new MCTSPlayer()); //J3
+        //players.add(new MCTSPlayer()); //J4
 //        players.add(new MCTSPlayer(params1));
-//        players.add(new OSLAPlayer());
+        //players.add(new OSLAPlayer());
 //        players.add(new RMHCPlayer());
-//        players.add(new HumanGUIPlayer(ac));
-//        players.add(new HumanConsolePlayer());
+          players.add(new HumanGUIPlayer(ac));
+ //       players.add(new HumanConsolePlayer());
 //        players.add(new FirstActionPlayer());
-//        players.add(new HumanConsolePlayer());
+   //     players.add(new HumanConsolePlayer());
 
         /* 4. Game parameter configuration. Set to null to ignore and use default parameters */
         String gameParams = "data/pandemic/param-config.json"; //null;
